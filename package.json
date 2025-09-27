@@ -4,6 +4,13 @@
 	"type": "module",
 	"scripts": {
 		"dev": "react-router dev",
+		"build": "react-router build",
+		"serve": "react-router serve ./build",
+		"test": "vitest",
+		"test:watch": "vitest --watch",
+		"lint": "eslint . --ext .ts,.tsx",
+		"lint:fix": "eslint . --ext .ts,.tsx --fix",
+		"postinstall": "react-router fs-routes",
 		"typecheck": "react-router typegen && tsc --noEmit"
 	},
 	"dependencies": {
